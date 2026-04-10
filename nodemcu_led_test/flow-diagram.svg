@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="320" viewBox="0 0 880 320">
+  <rect width="880" height="320" fill="#f8fafc"/>
+  <text x="40" y="36" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1f2937">NodeMCU LED Test</text>
+  <text x="40" y="62" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#4b5563">Simple forward and reverse LED chase pattern</text>
+
+  <rect x="40" y="120" width="160" height="70" rx="12" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="120" y="147" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Setup pins in</text>
+  <text x="120" y="167" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">the LED array</text>
+
+  <rect x="250" y="120" width="180" height="70" rx="12" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="340" y="147" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Forward chase</text>
+  <text x="340" y="167" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">LED ON -&gt; delay -&gt; OFF</text>
+
+  <rect x="490" y="120" width="180" height="70" rx="12" fill="#fef3c7" stroke="#d97706"/>
+  <text x="580" y="147" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Reverse chase</text>
+  <text x="580" y="167" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Step back through LEDs</text>
+
+  <rect x="720" y="120" width="120" height="70" rx="12" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="780" y="147" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Repeat</text>
+  <text x="780" y="167" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">loop</text>
+
+  <line x1="200" y1="155" x2="250" y2="155" stroke="#374151" stroke-width="2"/>
+  <polygon points="250,155 240,149 240,161" fill="#374151"/>
+  <line x1="430" y1="155" x2="490" y2="155" stroke="#374151" stroke-width="2"/>
+  <polygon points="490,155 480,149 480,161" fill="#374151"/>
+  <line x1="670" y1="155" x2="720" y2="155" stroke="#374151" stroke-width="2"/>
+  <polygon points="720,155 710,149 710,161" fill="#374151"/>
+  <path d="M 780 190 L 780 255 L 120 255 L 120 190" fill="none" stroke="#6b7280" stroke-width="2" stroke-dasharray="6 5"/>
+  <polygon points="120,190 114,200 126,200" fill="#6b7280"/>
+  <text x="450" y="285" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#4b5563">The sketch repeats the chase pattern forever</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420">
+  <rect width="960" height="420" fill="#f8fafc"/>
+  <text x="40" y="36" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1f2937">Obstacle Avoidance Using IR</text>
+  <text x="40" y="62" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#4b5563">State machine with MOVE, STOP, REVERSE, and TURN</text>
+
+  <rect x="40" y="120" width="170" height="70" rx="12" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="125" y="147" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Read left and right</text>
+  <text x="125" y="167" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">IR sensors</text>
+
+  <rect x="260" y="120" width="180" height="70" rx="12" fill="#e0f2fe" stroke="#0284c7"/>
+  <text x="350" y="147" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Obstacle detected?</text>
+  <text x="350" y="167" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#374151">LOW means blocked</text>
+
+  <rect x="500" y="60" width="170" height="75" rx="12" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="585" y="87" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">MOVE</text>
+  <text x="585" y="107" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Ramp speed and</text>
+  <text x="585" y="127" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">drive forward</text>
+
+  <rect x="500" y="170" width="170" height="75" rx="12" fill="#fef3c7" stroke="#d97706"/>
+  <text x="585" y="197" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">STOP</text>
+  <text x="585" y="217" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Ramp speed</text>
+  <text x="585" y="237" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">down to zero</text>
+
+  <rect x="740" y="170" width="170" height="75" rx="12" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="825" y="197" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">REVERSE</text>
+  <text x="825" y="217" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Back up for</text>
+  <text x="825" y="237" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">about 800 ms</text>
+
+  <rect x="740" y="290" width="170" height="75" rx="12" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="825" y="317" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">TURN</text>
+  <text x="825" y="337" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Choose side and</text>
+  <text x="825" y="357" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">turn for 500 ms</text>
+
+  <line x1="210" y1="155" x2="260" y2="155" stroke="#374151" stroke-width="2"/>
+  <polygon points="260,155 250,149 250,161" fill="#374151"/>
+
+  <line x1="440" y1="135" x2="500" y2="98" stroke="#374151" stroke-width="2"/>
+  <polygon points="500,98 490,96 494,105" fill="#374151"/>
+  <text x="465" y="108" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">no</text>
+
+  <line x1="440" y1="175" x2="500" y2="207" stroke="#374151" stroke-width="2"/>
+  <polygon points="500,207 490,200 488,210" fill="#374151"/>
+  <text x="465" y="195" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">yes</text>
+
+  <line x1="670" y1="207" x2="740" y2="207" stroke="#374151" stroke-width="2"/>
+  <polygon points="740,207 730,201 730,213" fill="#374151"/>
+
+  <line x1="825" y1="245" x2="825" y2="290" stroke="#374151" stroke-width="2"/>
+  <polygon points="825,290 819,280 831,280" fill="#374151"/>
+
+  <path d="M 825 365 L 825 395 L 125 395 L 125 190" fill="none" stroke="#6b7280" stroke-width="2" stroke-dasharray="6 5"/>
+  <polygon points="125,190 119,200 131,200" fill="#6b7280"/>
+  <text x="475" y="412" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#4b5563">After the turn, the state machine returns to MOVE and repeats</text>
+</svg>

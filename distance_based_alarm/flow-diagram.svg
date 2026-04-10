@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="400" viewBox="0 0 960 400">
+  <rect width="960" height="400" fill="#f8fafc"/>
+  <text x="40" y="36" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1f2937">Distance Based Alarm</text>
+  <text x="40" y="62" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#4b5563">ESP8266 ultrasonic alarm with four buzzer levels</text>
+
+  <rect x="40" y="130" width="180" height="70" rx="12" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="130" y="157" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Measure distance</text>
+  <text x="130" y="177" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">with HC-SR04</text>
+
+  <rect x="280" y="130" width="180" height="70" rx="12" fill="#e0f2fe" stroke="#0284c7"/>
+  <text x="370" y="157" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">distance &gt; 100?</text>
+  <text x="370" y="177" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#374151">Silent range</text>
+
+  <rect x="520" y="40" width="170" height="70" rx="12" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="605" y="67" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Turn buzzer OFF</text>
+  <text x="605" y="87" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">and repeat</text>
+
+  <rect x="520" y="140" width="170" height="70" rx="12" fill="#fef3c7" stroke="#d97706"/>
+  <text x="605" y="167" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">distance &gt; 50?</text>
+  <text x="605" y="187" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#374151">Slow-beep range</text>
+
+  <rect x="760" y="140" width="160" height="70" rx="12" fill="#fde68a" stroke="#ca8a04"/>
+  <text x="840" y="167" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">beep(800)</text>
+  <text x="840" y="187" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">100 ms ON</text>
+
+  <rect x="520" y="260" width="170" height="70" rx="12" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="605" y="287" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">distance &gt; 20?</text>
+  <text x="605" y="307" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#374151">Fast-beep range</text>
+
+  <rect x="760" y="240" width="160" height="70" rx="12" fill="#fecaca" stroke="#dc2626"/>
+  <text x="840" y="267" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">beep(300)</text>
+  <text x="840" y="287" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">shorter gap</text>
+
+  <rect x="760" y="320" width="160" height="50" rx="12" fill="#ddd6fe" stroke="#7c3aed"/>
+  <text x="840" y="350" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111827">Buzzer constant ON</text>
+
+  <line x1="220" y1="165" x2="280" y2="165" stroke="#374151" stroke-width="2"/>
+  <polygon points="280,165 270,159 270,171" fill="#374151"/>
+
+  <line x1="460" y1="145" x2="520" y2="90" stroke="#374151" stroke-width="2"/>
+  <polygon points="520,90 510,88 514,97" fill="#374151"/>
+  <text x="490" y="108" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">yes</text>
+
+  <line x1="460" y1="180" x2="520" y2="175" stroke="#374151" stroke-width="2"/>
+  <polygon points="520,175 510,170 511,181" fill="#374151"/>
+  <text x="490" y="171" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">no</text>
+
+  <line x1="690" y1="175" x2="760" y2="175" stroke="#374151" stroke-width="2"/>
+  <polygon points="760,175 750,169 750,181" fill="#374151"/>
+  <text x="725" y="167" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">yes</text>
+
+  <line x1="605" y1="210" x2="605" y2="260" stroke="#374151" stroke-width="2"/>
+  <polygon points="605,260 599,250 611,250" fill="#374151"/>
+  <text x="615" y="238" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">no</text>
+
+  <line x1="690" y1="295" x2="760" y2="275" stroke="#374151" stroke-width="2"/>
+  <polygon points="760,275 750,271 753,281" fill="#374151"/>
+  <text x="725" y="276" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">yes</text>
+
+  <line x1="690" y1="320" x2="760" y2="345" stroke="#374151" stroke-width="2"/>
+  <polygon points="760,345 750,338 746,349" fill="#374151"/>
+  <text x="723" y="341" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">no</text>
+</svg>
